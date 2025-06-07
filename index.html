@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBlog - Latest Tech News & Tutorials</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-code-slash me-2"></i>TechBlog
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#posts">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#subscribe">
+                            <i class="bi bi-bell me-1"></i>Subscribe
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Welcome to TechBlog</h1>
+            <p class="lead mb-4">Discover the latest in technology, programming tutorials, and industry insights</p>
+            <a href="#posts" class="btn btn-light btn-lg px-4">
+                <i class="bi bi-arrow-down me-2"></i>Explore Posts
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container my-5" id="posts">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h2 class="display-5 fw-bold mb-3">Latest Blog Posts</h2>
+                <p class="text-muted">Stay updated with our latest articles and tutorials</p>
+            </div>
+        </div>
+
+        <!-- Featured Post -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card bg-primary text-white">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop" 
+                                 class="img-fluid rounded-start h-100" alt="Featured Post" style="object-fit: cover;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Featured</span>
+                                <h3 class="card-title">The Future of Artificial Intelligence in 2025</h3>
+                                <p class="card-text">Explore how AI is reshaping industries and what we can expect in the coming years. From machine learning breakthroughs to ethical considerations.</p>
+                                <p class="card-text"><small class="text-light">Published 2 days ago by Sarah Johnson</small></p>
+                                <a href="#" class="btn btn-light">Read Full Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Post Cards -->
+        <div class="row g-4">
+            <!-- Post 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=200&fit=crop" 
+                         class="card-img-top" alt="Web Development">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Web Development</span>
+                        </div>
+                        <h5 class="card-title">Building Responsive Websites with Bootstrap 5</h5>
+                        <p class="card-text flex-grow-1">Learn how to create modern, responsive websites using Bootstrap 5's powerful grid system and components.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-muted">5 min read</small>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1554306274-f23873d9a26c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                         class="card-img-top" alt="JavaScript">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-warning text-dark">JavaScript</span>
+                        </div>
+                        <h5 class="card-title">Modern JavaScript ES6+ Features</h5>
+                        <p class="card-text flex-grow-1">Discover the latest JavaScript features that will make your code cleaner and more efficient.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-muted">8 min read</small>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1579808988913-08c9e00e9480?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                         class="card-img-top" alt="Mobile Development">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-info">Mobile Dev</span>
+                        </div>
+                        <h5 class="card-title">React Native vs Flutter: Which to Choose?</h5>
+                        <p class="card-text flex-grow-1">A comprehensive comparison of two popular cross-platform mobile development frameworks.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-muted">12 min read</small>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=200&fit=crop" 
+                         class="card-img-top" alt="Data Science">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-secondary">Data Science</span>
+                        </div>
+                        <h5 class="card-title">Getting Started with Machine Learning</h5>
+                        <p class="card-text flex-grow-1">A beginner's guide to understanding machine learning concepts and getting started with Python.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-muted">15 min read</small>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=400&h=200&fit=crop" 
+                         class="card-img-top" alt="Cloud Computing">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-primary">Cloud</span>
+                        </div>
+                        <h5 class="card-title">Cloud Computing Fundamentals</h5>
+                        <p class="card-text flex-grow-1">Understanding the basics of cloud computing and how it's transforming business operations.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-muted">10 min read</small>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=200&fit=crop" 
+                         class="card-img-top" alt="Cybersecurity">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-danger">Security</span>
+                        </div>
+                        <h5 class="card-title">Cybersecurity Best Practices</h5>
+                        <p class="card-text flex-grow-1">Essential security practices every developer should know to protect applications and data.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-muted">7 min read</small>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="text-center mt-5">
+            <button class="btn btn-outline-primary btn-lg px-4">
+                <i class="bi bi-arrow-down-circle me-2"></i>Load More Posts
+            </button>
+        </div>
+    </main>
+
+    <!-- Newsletter Section -->
+    <section class="bg-light py-5" id="subscribe">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h3 class="mb-3">Stay Updated</h3>
+                    <p class="text-muted mb-4">Subscribe to our newsletter for the latest tech insights and tutorials.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Enter your email address">
+                        <button class="btn btn-primary" type="button">
+                            <i class="bi bi-send me-1"></i>Subscribe
+                        </button>
+                    </div>
+                    <small class="text-muted">We respect your privacy. Unsubscribe at any time.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">
+                        <i class="bi bi-code-slash me-2"></i>TechBlog
+                    </h5>
+                    <p class="text-light">Your go-to source for the latest in technology, programming tutorials, and industry insights. Stay ahead of the curve with our expert content.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#posts" class="text-light text-decoration-none">Posts</a></li>
+                        <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="mb-3">Categories</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Web Development</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Mobile Apps</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">AI & ML</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Cybersecurity</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="mb-3">Connect With Us</h6>
+                    <div class="mb-3">
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="text-light mb-0">
+                        <i class="bi bi-envelope me-2"></i>contact@techblog.com
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: #34495e;">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">&copy; 2025 TechBlog. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
